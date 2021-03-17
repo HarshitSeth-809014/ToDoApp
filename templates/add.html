@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Add{% endblock title %}
+
+{% block body %}
+    <div class="container my-5">
+      <h2>Add a To-Do</h2>
+      <form action="/" method="POST">
+        <div class="mb-3">
+          <label for="title" class="form-label">To-Do Title</label>
+          <input type="text" class="form-control" name="title" id="title" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="desc" class="form-label">To-Do Description</label>
+          <input type="text" class="form-control" name="desc" id="desc">
+        </div>
+        <button type="submit" class="btn btn-dark">Submit</button>
+      </form>
+    </div>
+{% endblock body %}
